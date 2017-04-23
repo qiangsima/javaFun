@@ -2,6 +2,7 @@ package com.sima;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.nio.IntBuffer;
 
 /**
  * Created by sima on 2017/4/23.
@@ -22,9 +23,22 @@ public class BufferDemo {
         buffer.order(ByteOrder.LITTLE_ENDIAN);
         System.out.println(buffer.getInt(0));//2^24
     }
+    //字节缓冲区视图
+    public void viewBuffer(){
+        ByteBuffer buffer = ByteBuffer.allocate(32);
+        buffer.putInt(1);//读取位置为4
+        /*
+        * 视图和buffer对象共享同样的存储空间
+        * 准确讲，是读写位置和读写限制之间的可用空间
+        * */
+        IntBuffer intBuffer = buffer.asIntBuffer();//
+        intBuffer.put(2);
+        System.out.println(buffer.getInt());//2
+    }
     public static void main(String[] args){
         BufferDemo demo = new BufferDemo();
         demo.useByteBuffer();
         demo.byteOrder();
+        demo.viewBuffer();
     }
 }
