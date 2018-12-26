@@ -1,4 +1,4 @@
-package com.sima.algo;
+package main.java.com.sima.algo;
 
 import java.util.LinkedList;
 import java.util.Queue;

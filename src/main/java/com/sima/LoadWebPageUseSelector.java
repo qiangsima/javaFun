@@ -1,8 +1,7 @@
-package com.sima;
+package main.java.com.sima;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.MalformedURLException;
 import java.net.SocketAddress;
 import java.net.URL;
 import java.nio.ByteBuffer;

@@ -1,4 +1,4 @@
-package com.sima;
+package main.java.com.sima;
 
 import java.io.IOException;
 import java.io.InputStream;
