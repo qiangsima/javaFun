@@ -1,4 +1,4 @@
-package main.java.com.sima;
+package com.sima;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

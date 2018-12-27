@@ -1,4 +1,4 @@
-package main.java.com.sima.dataStructure;
+package com.sima.dataStructure;
 
 import java.util.LinkedList;
 import java.util.Queue;

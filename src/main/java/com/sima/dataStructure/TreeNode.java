@@ -1,4 +1,4 @@
-package main.java.com.sima.dataStructure;
+package com.sima.dataStructure;
 
 /**
  * Created by sima on 2017/4/18.

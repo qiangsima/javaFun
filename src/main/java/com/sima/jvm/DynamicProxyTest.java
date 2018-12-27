@@ -1,4 +1,4 @@
-package main.java.com.sima.jvm;
+package com.sima.jvm;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

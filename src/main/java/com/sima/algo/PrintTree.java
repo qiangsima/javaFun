@@ -1,4 +1,4 @@
-package main.java.com.sima.algo;
+package com.sima.algo;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package main.java.com.sima.leetcode;
+package com.sima.leetcode;
 
 import java.util.Arrays;
 

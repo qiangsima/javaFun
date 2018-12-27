@@ -1,4 +1,4 @@
-package main.java.com.sima.util;
+package com.sima.util;
 
 import java.util.Random;
 
