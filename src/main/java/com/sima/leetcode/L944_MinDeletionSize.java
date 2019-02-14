@@ -21,13 +21,10 @@ public class L944_MinDeletionSize {
         int res = 0;
         int n = A[0].length();
         for (int i = 0; i < n; i++) {
-            int max = 0;
-            for (int j = 0; j < A.length; j++) {
-                if (A[j].charAt(i) < max){
+            for (int j = 0; j < A.length-1; j++) {
+                if (A[j].charAt(i) > A[j+1].charAt(i)){
                     res++;
                     break;
-                } else {
-                    max = (int)A[j].charAt(i);
                 }
             }
         }
