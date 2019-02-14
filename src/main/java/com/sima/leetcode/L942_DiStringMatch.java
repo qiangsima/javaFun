@@ -19,9 +19,9 @@ public class L942_DiStringMatch {
         int[] res = new int[n+1];
         for (int i = 0; i < n; i++){
             if (S.charAt(i) == 'I'){
-                res[i] = lo++;
+                res[i] = lo++; // res[i+1]的取值范围是[lo+1, hi]>lo
             } else {
-                res[i] = hi--;
+                res[i] = hi--; // res[i+1]的取值范围是[lo, hi-1]<hi
             }
         }
         res[n] = lo;
