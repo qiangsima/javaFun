@@ -29,4 +29,24 @@ public class L922_SortArrayByParity2 {
 
         return res;
     }
+
+    public int[] sortArrayByParity_InPlace(int[] A){
+        int n = A.length;
+        int odd = 1, even = 0;
+        while (odd < n && even < n){
+            while (odd < n && A[odd]%2 == 1){
+                odd += 2;
+            }
+            while (even < n && A[even]%2 == 0){
+                even += 2;
+            }
+            if (odd < n && even < n){
+                int tmp = A[odd];
+                A[odd] = A[even];
+                A[even] = tmp;
+            }
+        }
+
+        return A;
+    }
 }
